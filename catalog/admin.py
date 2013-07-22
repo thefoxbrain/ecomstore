@@ -1,6 +1,6 @@
 from django.contrib import admin 
 from catalog.models import Product, Category 
-from catalog.forms import ProductAdminForm 
+from forms import ProductAdminForm 
 
 class ProductAdmin(admin.ModelAdmin): 
     form = ProductAdminForm 
