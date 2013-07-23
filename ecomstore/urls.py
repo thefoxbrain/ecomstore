@@ -20,6 +20,7 @@ urlpatterns = patterns('',
      
     (r'^', include('catalog.urls')), 
     (r'^cart/', include('cart.urls')), 
+    (r'^pages/', include('django.contrib.flatpages.urls')),
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',{'document_root' : 'c:/websites/ecomstore/static' }),     
 ) 
 
